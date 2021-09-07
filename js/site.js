@@ -83,7 +83,7 @@ function displayData(fbData) {
         const tableRow = document.importNode(templateRow.content, true);
         //grab only the columns in the template
         rowCols = tableRow.querySelectorAll("td");
-
+        
         rowCols[0].classList.add(fbData[i]);
         rowCols[0].textContent = fbData[i];
        
